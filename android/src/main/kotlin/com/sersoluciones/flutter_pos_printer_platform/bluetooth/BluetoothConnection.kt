@@ -316,8 +316,8 @@ class BluetoothConnection constructor(handler: Handler) : IBluetoothConnection {
                     break
                 }
                 // Send the obtained bytes to the UI Activity
-                val readMsg = mHandler.obtainMessage(BluetoothConstants.MESSAGE_READ, numBytes, -1, mmBuffer)
-                readMsg.sendToTarget()
+                // val readMsg = mHandler.obtainMessage(BluetoothConstants.MESSAGE_READ, numBytes, -1, mmBuffer)
+                // readMsg.sendToTarget()
 
             }
         }
