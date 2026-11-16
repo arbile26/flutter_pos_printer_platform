@@ -1,3 +1,10 @@
+## 1.3.0
+
+* Removed the iOS native implementation (Bluetooth via the vendored `libGSDK.a`).
+  It had no Swift Package Manager support and no arm64 simulator slice. On iOS
+  the package is now Dart only: network (TCP) printing works as before, and
+  Bluetooth calls return empty / false instead of reaching a native plugin.
+
 ## 1.2.4
 
 * Relax rxdart version to allow library usage in FlutterFlow app builder
